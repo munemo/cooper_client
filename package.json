@@ -15,7 +15,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "cy:open": "yarn start --silent & cypress open"
+    "cy:open": "cypress open --silent & yarn start"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,5 +37,9 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.4",
     "react-test-renderer": "^16.13.1"
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:munemo/cooper_client.git",
+  "author": "munemo <john.chimbani@outlook.com>",
+  "license": "MIT"
 }
