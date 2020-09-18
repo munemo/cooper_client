@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { getData } from "../modules/performanceData";
-import {Line} from "react-chartjs-2"
+
 
 class DisplayPerformanceData extends Component {
   state = {
