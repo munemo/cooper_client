@@ -11,12 +11,11 @@ class App extends Component {
     age: "",
     renderLoginForm: false,
     authenticated: false,
-    message: "",
-    entrySaved: false
+    message: ""
   };
 
   onChangeHandler = e => {
-    this.setState({ [e.target.name]: e.target.value, entrySaved: false });
+    this.setState({ [e.target.name]: e.target.value });
   };
 
   onLogin = async e => {
@@ -67,9 +66,6 @@ class App extends Component {
           distance={this.state.distance}
           gender={this.state.gender}
           age={this.state.age}
-          authenticated={this.state.authenticated}
-          entrySaved={this.state.entrySaved}
-          entryHandler={() => this.setState({ entrySaved: true })}
         />
       </>
     );
